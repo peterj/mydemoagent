@@ -13,7 +13,7 @@ services:
     networks:
       - agentregistry-network
   mydemoagent:
-    image: localhost:5001/mydemoagent:latest
+    image: pj3677/mydemoagent:0.0.1
     build:
       context: .
       dockerfile: Dockerfile
