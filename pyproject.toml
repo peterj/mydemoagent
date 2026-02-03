@@ -1,0 +1,9 @@
+[project]
+name = "mydemoagent"
+version = "0.1"
+description = "mydemoagent agent"
+readme = "README.md"
+dependencies = [
+  "google-adk>=1.8.0",
+]
+
