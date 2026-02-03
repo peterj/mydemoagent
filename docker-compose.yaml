@@ -37,6 +37,15 @@ services:
         target: /config
     networks:
       - agentregistry-network
+  user-my-mcp-server:
+    image: docker.io/pj3677/my-mcp-server:0.1.0
+    expose:
+      - "3000"
+    environment:
+      - HOST=0.0.0.0
+      - MCP_TRANSPORT_MODE=http
+    networks:
+      - agentregistry-network
 
 networks:
   agentregistry-network:
